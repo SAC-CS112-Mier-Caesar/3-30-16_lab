@@ -10,6 +10,7 @@ public class BirthYear {
 	  int cal;
 	  int age;
 	  int year;
+	  int yearsLeft;
 	  
 	  String name = JOptionPane.showInputDialog(" What is your name? );
   	String birthYear = JOptionPane..showInputDialog("What is your birth year? ");
@@ -21,8 +22,12 @@ public class BirthYear {
    System.out.println("Hello, " + name + "You are " + age + " years old today");
    
    if (age > 21)
-    System.out.println("You are lawfully allowed to drink alcohol.");
+    System.out.println("You are legally allowed to drink alcohol.");
    
+   yearsLeft = 21 - age;
+   
+   if (age <21)
+   System.out.pritnln("You have " + yearsLeft + " until you can legally drink");
   
 
 }
