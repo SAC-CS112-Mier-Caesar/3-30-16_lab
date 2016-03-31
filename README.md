@@ -11,9 +11,12 @@ public class BirthYear {
 	  int age;
 	  int year;
 	  int yearsLeft;
+	  int count = 0;
 	  
-	  String name = JOptionPane.showInputDialog(" What is your name? );
-  	String birthYear = JOptionPane..showInputDialog("What is your birth year? ");
+	  while (count < 3){
+	  
+	  String name = JOptionPane.showInputDialog("What is your name? ");
+  	String birthYear = JOptionPane.showInputDialog("What is your birth year? ");
   	
   	
    year = Integer.parseInt(birthYear);
@@ -28,6 +31,9 @@ public class BirthYear {
    
    if (age <21)
    System.out.pritnln("You have " + yearsLeft + " until you can legally drink");
+   
+   count++
+   }
   
 
 }
